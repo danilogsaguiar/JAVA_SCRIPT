@@ -12,6 +12,8 @@
         }
         h1{
             color: yellow;
+            font-weight: 700;
+            
         }
     </style>
 </head>
@@ -19,9 +21,8 @@
     <h1>Ola, Mundo!</h1>
     <p>Ja me livrei da maldiçao</p>
     <script>
-        window.alert('Minha primeira mensagem')
-        window.confirm('Esta gostando de javascript')
-        window.prompt('Qual e seu nome')
+        var nome = window.prompt('Qual e seu nome?')
+        window.alert('E um grande prazer em te conhecer, ' + nome )
     </script>
 </body>
 </html>

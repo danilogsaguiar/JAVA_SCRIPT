@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+</head>
+<body>
+    <input type="text" name="txtnt" id="txtnt">
+    <input type="button" value="nacionalidade" onclick="clicar()">
+    <div id="result"></div>
+
+    <script>
+        function clicar(){
+            var pais= window.document.querySelector('input#txtnt')
+            var text=window.document.querySelector('div#result')
+            var click=pais.value 
+            text.innerHTML=`Seu pais de origem e o ${click}`
+            if(click='brasil'|| click=='Brasil'){
+                text.innerHTML +=' Voce e brasileiro'
+            }else{
+                text.innerHTML +='voce nao e brasileiro'
+            }
+
+        }
+    </script>
+</body>
+</html>

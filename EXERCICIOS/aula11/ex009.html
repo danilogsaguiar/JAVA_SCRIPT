@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voce e Brasileiro</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+     Digite seu pais:<input type="text" name="resposta" id="resposta
+     ">
+     <input type="button" value="verificar" onclick="verificar()">
+     <div id="nascionalidade">
+
+     </div>
+    
+    <script>
+        function verificar(){
+            var res=document.getElementById('resposta')
+            var nacio=document.getElementById('nacionalidade')
+            var pais= res.value
+
+            if(pais=='Brasil'){
+                nacio.innerHTML='Voce e Brasileiro'
+            }else{
+                nacio.innerHTML= 'voce e estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
